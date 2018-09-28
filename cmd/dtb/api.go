@@ -23,8 +23,6 @@ func ApiServe(c *cli.Context) error {
 	}
 
 	r := gin.New()
-
-
 	r.Static("/assets", gopath()+"/src/github.com/dropthebit/assets")
 
 	//MainPage Serve
