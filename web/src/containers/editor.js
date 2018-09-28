@@ -1,19 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {DiagramEngine, DiagramModel, LinkModel,DefaultLinkModel, DiagramWidget,DefaultNodeModel} from "storm-react-diagrams";
-// import DefaultNodeModel from "../lib/node/index"
+// import DefaultNodeModel from "../lib/node/index
+
 class FlowEditor extends Component {
-    state = {
-        text2: 'black',
-        text3: 'black',
-        text3x: 10,
-        text3y: 60,
-
-        blocks: [
-            {type: "", in: "", out: "", params: []}
-        ]
-    };
-
     constructor(props) {
         super(props);
         //1) setup the diagram engine
