@@ -16,7 +16,7 @@ func gopath() string {
 }
 
 func ApiServe(c *cli.Context) error {
-	if c.BoolT("debug") {
+	if c.Bool("debug") {
 		gin.SetMode(gin.DebugMode)
 	}else{
 		gin.SetMode(gin.ReleaseMode)
@@ -25,7 +25,7 @@ func ApiServe(c *cli.Context) error {
 	r := gin.New()
 
 
-	r.Static("/assets", gopath()+"/assets")
+	r.Static("/assets", gopath()+"/src/github.com/dropthebit/assets")
 
 	//MainPage Serve
 	r.GET("/", func(context *gin.Context) {
