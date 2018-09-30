@@ -33,9 +33,40 @@ func ApiServe(c *cli.Context) error {
 	//api
 	v1 := r.Group("/v1")
 	{
-		v1.GET("aa", func(context *gin.Context) {
+		// get information
+		v1.GET("info", func(context *gin.Context) {
 
 		})
+
+		// get crawling state for dashboard
+		v1.GET("state", func(context *gin.Context) {
+
+		})
+
+		// block
+		block := v1.Group("block")
+		{
+			block.GET("/types", func(context *gin.Context) {
+
+			})
+		}
+
+		// block
+		bp := v1.Group("blueprint")
+		{
+			bp.GET("/:id", func(context *gin.Context) {
+
+			})
+			bp.POST("/:id", func(context *gin.Context) {
+
+			})
+			bp.PUT("/:id", func(context *gin.Context) {
+
+			})
+			bp.DELETE("/:id", func(context *gin.Context) {
+
+			})
+		}
 	}
 	err := r.Run()
 	return err

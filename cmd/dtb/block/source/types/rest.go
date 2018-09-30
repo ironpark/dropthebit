@@ -13,6 +13,10 @@ func (r *Rest) Json() string {
 	panic("implement me")
 }
 
+func (r *Rest) GetParamTypes() map[string]string {
+	panic("implement me")
+}
+
 func (r *Rest) GetParams() map[string]string {
 	panic("implement me")
 }
