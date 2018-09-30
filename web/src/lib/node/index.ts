@@ -17,6 +17,9 @@ export class DefaultNodeModel extends NodeModel {
         super("default");
         this.name = name;
         this.color = color;
+        this.width = 100;
+        this.addPort(new DefaultPortModel(true, Toolkit.UID(), "eeeeee"));
+        this.addPort(new DefaultPortModel(true, Toolkit.UID(), "asdas"));
     }
 
     public addInPort(label: string): DefaultPortModel {

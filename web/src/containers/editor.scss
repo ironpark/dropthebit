@@ -1,0 +1,39 @@
+.container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  //flex-direction: row;
+  .contents {
+    display: -webkit-flex;
+    display: flex;
+    //flex-direction: column;
+    .inventory {
+      background: #2d2d2d;
+      color: #f5f8fa;
+      flex: 2;
+      border-bottom: 1px solid gray;
+      flex-basis: 50px;
+      flex-shrink: 0;
+      padding: 10px;
+      .list {
+        height: 500px;
+        overflow: auto;
+      }
+    }
+    .diagram-layer {
+      flex: 12;
+    }
+    .property {
+      flex: 3;
+      flex-basis: 50px;
+      flex-shrink: 0;
+    }
+  }
+  .console {
+    flex: 1;
+    background: #000;
+    height: 100%;
+  }
+}
+

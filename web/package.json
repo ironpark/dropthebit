@@ -9,6 +9,7 @@
     "start": "parcel ./public/index.html -p 3000 --open"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.6.1",
     "jest": "^23.6.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

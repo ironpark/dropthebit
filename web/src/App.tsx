@@ -1,8 +1,6 @@
 import * as React from 'react';
 import './App.scss';
-import FlowEditor from './containers/editor.js'
-// @ts-ignore
-import logo from './logo.svg';
+import FlowEditor from './containers/editor'
 
 class App extends React.Component {
     public render(): JSX.Element {
